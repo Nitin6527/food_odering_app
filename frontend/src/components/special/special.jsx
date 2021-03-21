@@ -6,7 +6,10 @@ import { SquareButton } from '../../styled-components/button/button';
 const Special = () => {
     return (
         <SpecialSection>
-            <h1>Special<span><SquareButton Special >View The Menu</SquareButton></span></h1>
+            <div>
+                <h1>Our Delicious Specialties</h1>
+                <SquareButton Special >View The Menu</SquareButton>
+            </div>
             <div>
                 <ItemCards />
             </div>

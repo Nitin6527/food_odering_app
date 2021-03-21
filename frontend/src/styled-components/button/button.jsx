@@ -22,15 +22,12 @@ export const ButtonStyledComponent = styled.button`
 `;
 
 export const SquareButton = styled.button`
-   position:${props => `${props.Special ? 'absolute' : 'none'}`};
-   right:${props => `${props.Special ? '200px' : 'none'}`};
-   top:${props => `${props.Special ? '0px' : 'none'}`};
    color: #c8c6a7;
-   display:flex;
    justify-content:center;
    font-size: 18px;
-   margin-top: 30px;
+   margin-top: ${props => `${props.Special ? '0px' : '30px'}`};
    background: white;
+   display:flex;
    padding: 15px 20px;
    border-color: #c8c6a7;
    border: 2px solid #c8c6a7;
