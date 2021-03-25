@@ -3,6 +3,7 @@ import { SquareButton } from '../button/button';
 
 export const SpecialSection = styled.section`
 position: relative;
+padding-bottom: 100px; 
 margin: 0px 0;
 width: 100%;
 display:flex;
@@ -31,3 +32,4 @@ div{
     margin-bottom:50px;
  }
 `;
+

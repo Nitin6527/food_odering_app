@@ -4,7 +4,7 @@ const WhiteNav = css`
 color: white;
 width: 100%;
 background-color: transparent;
-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;;l
 `;
 
 const BlackNav = css`
