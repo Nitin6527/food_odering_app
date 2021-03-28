@@ -23,23 +23,26 @@ color: #c8c6a7;
 right:200px;
 `;
 
-export const Icon = styled.div`
-&:hover{
-  cursor:pointer;
-  fill:#f58634;
-}
+export const IconRow = styled.div`
+cursor:pointer;
+color:${props => props.isrowactive ? '#f58634' : '#c8c6a7'};
+`;
+
+export const IconGrid = styled.div`
+cursor:pointer;
+color:${props => props.isgridactive ? '#f58634' : '#c8c6a7'};
 `;
 
 export const MenuHeader = styled.div`
-position:relative;
+  position:relative;
   display:flex;
   align-items:center;
   justify-content:center;
 `;
 
 export const MenuSection = styled.div`
-  width: 100%;
-  display: flex;
+  width:${props => props.showRows ? '1000px' : '100%'};
+  display: ${props => props.showRows ? 'block' : 'flex'};
   justify-content:center;
   align-items:center;
   text-align:center;
@@ -97,7 +100,6 @@ export const ImageBox = styled.div`
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
- 
 `;
 
 export const MenuDesc = styled.div`
@@ -112,7 +114,40 @@ export const MenuDesc = styled.div`
   }
 `;
 
-
-
 export const MenuRow = styled.div`
+position:relative;
+display:flex;
+width:100%;
+align-items:center;
+justify-content:space-between;
+padding: 20px;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+margin:20px 0;
+img{
+  border-radius: 50%;
+  margin-right:30px;
+}
+h5{
+  font-family: "Lora", Georgia, serif;
+  color: #404044;
+  display:flex;
+  flex-direction:column;
+  line-height:30px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right:30px;
+  span{
+    color:#7d7d7d;
+    font-size:14px;
+    font-weight:300;
+  }
+}
+h3{
+    text-align:end;
+    font-size: 24px;
+    color: #404044;
+    font-weight: 400;
+    font-family: "Lora", Georgia, serif;
+}
 `;

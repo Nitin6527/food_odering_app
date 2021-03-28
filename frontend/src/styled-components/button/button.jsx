@@ -1,19 +1,19 @@
 import styled, { css } from 'styled-components';
 
 export const ButtonStyledComponent = styled.button`
-   color: white;
+   color: ${props => `${props.menuButton ? '#f58634' : 'white'}`};
    margin-top: 30px;
    background: rgba(255, 255, 255, 0.1);
    border-radius: 50px;
    padding: 15px 20px;
-   border-color: #f58634;
-   border: none;
+   border: 1px solid ${props => `${props.menuButton ? '#f58634' : 'none'}`};
    cursor:pointer;
    font-weight: 600;
    transition: all .5s ease-in-out;
    &:hover{
     opacity: 1;
     background-color: #f58634;
+    color: ${props => `${props.menuButton && 'white'}`};
     transform: scale(1.03); 
    }
    &:focus{

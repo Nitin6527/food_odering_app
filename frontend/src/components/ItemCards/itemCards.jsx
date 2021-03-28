@@ -35,7 +35,7 @@ const ItemCards = () => {
                             <img src={data.img} alt="Item-image" />
                             <div>
                                 <Overlay>
-                                    <div class="text">{data.item}</div>
+                                    <div className="text">{data.item}</div>
                                 </Overlay>
                             </div>
                         </CardItemImage>
